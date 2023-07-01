@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-slate-900;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+.nav {
+  @apply fixed top-0 z-10 w-full h-full text-white;
+  height: 70px;
+  background: linear-gradient(135deg, rgb(67, 108, 184), rgb(12, 55, 134));
+}
+.container {
+  @apply px-5 mx-auto flex items-center;
+  max-width: 1200px;
+}
+.link {
+  @apply px-5 py-2;
+}
+.button {
+  @apply text-white rounded-full text-white;
+  background: linear-gradient(135deg, rgb(51, 55, 63), rgb(29, 33, 41));
+}
+.start {
+  background: linear-gradient(135deg, rgb(95, 147, 245), rgb(12, 55, 134));
+  color: aliceblue;
+  @apply rounded-full mt-3 text-white;
+}
+#header {
+  margin-top: 70px;
+}
+#about {
+  margin-top: 70px;
+}
+.header {
+  @apply text-center pb-3 border-b-4 border-sky-700  sm:py-3;
+}
+.card {
+  @apply  my-4 bg-slate-800 p-4 border-l-4 rounded-2xl border-sky-700;
+}
+.h1 {
+  @apply text-4xl font-bold md:text-6xl;
+}
+.card-title {
+  @apply text-2xl  font-bold py-3;
+}
+.portofolio {
+  @apply inline text-center border-b-4 border-sky-700 md:flex gap-x-4;
+}
